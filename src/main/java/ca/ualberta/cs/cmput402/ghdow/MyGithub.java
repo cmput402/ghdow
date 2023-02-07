@@ -1,33 +1,21 @@
 package ca.ualberta.cs.cmput402.ghdow;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 import org.kohsuke.github.*;
 
-import java.nio.file.Path;
 import java.util.*;
 
 public class MyGithub {
-    protected GitHub gitHub;
-    protected GHPerson myself;
-    protected Map<String, GHRepository> myRepos;
-    protected List<GHCommit> myCommits;
-    protected String getOAuthToken () throws IOException {
-        Path tokenFile = Paths.get(
-                System.getProperty("user.home"),
-                "githubOAuthToken.txt"
-        );
-        String token = Files.readString(tokenFile);
-        return token.strip();
-    }
-    public MyGithub() throws IOException {
-        String token = getOAuthToken();
+    private final GitHub gitHub;
+    private GHPerson myself;
+    private Map<String, GHRepository> myRepos;
+    private List<GHCommit> myCommits;
+    public MyGithub(String token) throws IOException {
         gitHub = new GitHubBuilder().withOAuthToken(token).build();
     }
 
-    protected GHPerson getMyself() throws IOException {
+    private GHPerson getMyself() throws IOException {
         if (myself == null) {
             myself = gitHub.getMyself();
         }
@@ -38,7 +26,7 @@ public class MyGithub {
         return gitHub.getMyself().getLogin();
     }
 
-    protected List<GHRepository> getRepos() throws IOException {
+    private List<GHRepository> getRepos() throws IOException {
         if (myRepos == null) {
             myRepos = getMyself().getRepositories();
         }
@@ -83,7 +71,7 @@ public class MyGithub {
         return intToDay(argMax(days));
     }
 
-    protected Iterable<? extends GHCommit> getCommits() throws IOException {
+    private Iterable<? extends GHCommit> getCommits() throws IOException {
         if (myCommits == null) {
             myCommits = new ArrayList<>();
             int count = 0;
