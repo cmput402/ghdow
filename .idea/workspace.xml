@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96cffda1-b3d6-440c-bb91-6e89b5d5c78c" name="Changes" comment="privatize">
+    <list default="true" id="96cffda1-b3d6-440c-bb91-6e89b5d5c78c" name="Changes" comment="Add example for GHIssueWrapper">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/ualberta/cs/cmput402/ghdow/GHIssueWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/ualberta/cs/cmput402/ghdow/MyGithubTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/ualberta/cs/cmput402/ghdow/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ualberta/cs/cmput402/ghdow/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/ualberta/cs/cmput402/ghdow/MyGithub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ualberta/cs/cmput402/ghdow/MyGithub.java" afterDir="false" />
     </list>
@@ -23,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -48,20 +52,30 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "/home/hazel/IdeaProjects/ghdow",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "copyright.profiles",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ca.ualberta.cs.cmput402.ghdow" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Junits">
     <configuration name="main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="temurin-18" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -71,19 +85,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="ghdow" />
+    <configuration name="MyGithubTest.getFirstIssueCreateDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ca.ualberta.cs.cmput402.ghdow.MyGithubTest.getFirstIssueCreateDate&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Junits" type="JUnit" factoryName="JUnit">
+      <module name="ghdow.test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-18" />
+      <option name="PACKAGE_NAME" value="ca.ualberta.cs.cmput402.ghdow" />
+      <option name="MAIN_CLASS_NAME" value="ca.ualberta.cs.cmput402.ghdow.MyGithubTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ghdow" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.main" />
+      <item itemvalue="Gradle.MyGithubTest.getFirstIssueCreateDate" />
+      <item itemvalue="JUnit.Junits" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.MyGithubTest.getFirstIssueCreateDate" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -94,7 +140,8 @@
       <option name="presentableId" value="Default" />
       <updated>1675706125265</updated>
       <workItem from="1675706127229" duration="9058000" />
-      <workItem from="1675723037189" duration="3530000" />
+      <workItem from="1675723037189" duration="4241000" />
+      <workItem from="1675883949252" duration="5851000" />
     </task>
     <task id="LOCAL-00001" summary="Initial import">
       <created>1675722526750</created>
@@ -110,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675723209022</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="privatize">
+      <created>1675736257998</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675736257998</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,7 +173,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial import" />
     <MESSAGE value="privatize" />
-    <option name="LAST_COMMIT_MESSAGE" value="privatize" />
+    <MESSAGE value="Add example for GHIssueWrapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add example for GHIssueWrapper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

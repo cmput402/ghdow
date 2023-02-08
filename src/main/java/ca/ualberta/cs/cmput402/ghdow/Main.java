@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Main {
-    private static String getOAuthToken() throws IOException {
+    static String getOAuthToken() throws IOException {
         Path tokenFile = Paths.get(
                 System.getProperty("user.home"),
                 "githubOAuthToken.txt"

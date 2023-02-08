@@ -94,4 +94,16 @@ public class MyGithub {
         }
         return myCommits;
     }
+
+    public Date getFirstIssueCreateDate() throws IOException {
+        for (GHRepository repo: getRepos()) {
+            List<GHIssue> issues = repo.getIssues(GHIssueState.CLOSED);
+            if (issues.size() > 0) {
+                return (new GHIssueWrapper(issues.get(0))).getCreatedAt();
+            }
+
+        }
+        return null;
+    }
 }
+
