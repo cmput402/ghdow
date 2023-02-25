@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96cffda1-b3d6-440c-bb91-6e89b5d5c78c" name="Changes" comment="Add example for GHIssueWrapper">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/ualberta/cs/cmput402/ghdow/GHIssueWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/ualberta/cs/cmput402/ghdow/MyGithubTest.java" afterDir="false" />
+    <list default="true" id="96cffda1-b3d6-440c-bb91-6e89b5d5c78c" name="Changes" comment="Add example for GHIssueWrapper with multiple commits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ualberta/cs/cmput402/ghdow/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ualberta/cs/cmput402/ghdow/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/ualberta/cs/cmput402/ghdow/MyGithub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ualberta/cs/cmput402/ghdow/MyGithub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/ualberta/cs/cmput402/ghdow/MyGithubTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/ualberta/cs/cmput402/ghdow/MyGithubTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +28,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -47,26 +45,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/home/hazel/IdeaProjects/ghdow",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hazel/IdeaProjects/ghdow&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -141,7 +139,10 @@
       <updated>1675706125265</updated>
       <workItem from="1675706127229" duration="9058000" />
       <workItem from="1675723037189" duration="4241000" />
-      <workItem from="1675883949252" duration="5851000" />
+      <workItem from="1675883949252" duration="8706000" />
+      <workItem from="1677195172777" duration="5799000" />
+      <workItem from="1677256416651" duration="728000" />
+      <workItem from="1677361625917" duration="1870000" />
     </task>
     <task id="LOCAL-00001" summary="Initial import">
       <created>1675722526750</created>
@@ -164,17 +165,43 @@
       <option name="project" value="LOCAL" />
       <updated>1675736257998</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add example for GHIssueWrapper">
+      <created>1675893177586</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675893177586</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add example for GHIssueWrapper">
+      <created>1675893218149</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675893218149</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial import" />
     <MESSAGE value="privatize" />
     <MESSAGE value="Add example for GHIssueWrapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add example for GHIssueWrapper" />
+    <MESSAGE value="Add example for GHIssueWrapper with multiple commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add example for GHIssueWrapper with multiple commits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
