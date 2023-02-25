@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="96cffda1-b3d6-440c-bb91-6e89b5d5c78c" name="Changes" comment="Add example for GHIssueWrapper with multiple commits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ualberta/cs/cmput402/ghdow/MyGithub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ualberta/cs/cmput402/ghdow/MyGithub.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ca/ualberta/cs/cmput402/ghdow/MyGithubTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/ualberta/cs/cmput402/ghdow/MyGithubTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +141,7 @@
       <workItem from="1675883949252" duration="8706000" />
       <workItem from="1677195172777" duration="5799000" />
       <workItem from="1677256416651" duration="728000" />
-      <workItem from="1677361625917" duration="1870000" />
+      <workItem from="1677361625917" duration="6301000" />
     </task>
     <task id="LOCAL-00001" summary="Initial import">
       <created>1675722526750</created>
@@ -179,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675893218149</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add example for GHIssueWrapper with multiple commits">
+      <created>1677363512107</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677363512107</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
