@@ -7,9 +7,9 @@ import org.kohsuke.github.*;
 import java.util.*;
 
 public class MyGithub {
-    private final GitHub gitHub;
-    private GHPerson myself;
-    private Map<String, GHRepository> myRepos;
+    protected GitHub gitHub;
+    protected GHPerson myself;
+    protected Map<String, GHRepository> myRepos;
     private List<GHCommit> myCommits;
     public MyGithub(String token) throws IOException {
         gitHub = new GitHubBuilder().withOAuthToken(token).build();
@@ -71,7 +71,7 @@ public class MyGithub {
         return intToDay(argMax(days));
     }
 
-    private Iterable<? extends GHCommit> getCommits() throws IOException {
+    protected Iterable<? extends GHCommit> getCommits() throws IOException {
         if (myCommits == null) {
             myCommits = new ArrayList<>();
             int count = 0;
@@ -94,4 +94,15 @@ public class MyGithub {
         }
         return myCommits;
     }
+
+    public ArrayList<Date> getIssueCreateDates() throws IOException {
+        ArrayList<Date> result = new ArrayList<>();
+        for (GHRepository repo: getRepos()) {
+            List<GHIssue> issues = repo.getIssues(GHIssueState.CLOSED);
+            for (GHIssue issue: issues)
+                result.add((new GHIssueWrapper(issue)).getCreatedAt());
+            }
+        return result;
+    }
 }
+
